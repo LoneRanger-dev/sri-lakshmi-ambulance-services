@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://saikumarambulanceservice.com/sitemap.xml
+Sitemap: https://saikumarambulance.com/sitemap.xml
