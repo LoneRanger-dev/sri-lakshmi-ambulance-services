@@ -60,7 +60,6 @@ function setupForm() {
     }
 
     const data = new FormData(form);
-    data.set('access_key', 'YOUR_WEB3FORMS_KEY');
     status.textContent = 'Sending message...';
 
     try {
@@ -74,7 +73,7 @@ function setupForm() {
         status.textContent = 'Your request has been sent. Our team will contact you soon.';
         form.reset();
       } else {
-        status.textContent = result.message || 'Could not send. Please call directly.';
+        status.textContent = 'Could not send. Please call directly on +91 90001 47902.';
       }
     } catch (error) {
       status.textContent = 'Could not send. Please call directly on +91 90001 47902.';
