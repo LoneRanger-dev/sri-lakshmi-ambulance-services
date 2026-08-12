@@ -49,7 +49,13 @@ const server = http.createServer((req, res) => {
     }
 
     const ext = path.extname(filePath).toLowerCase();
-    res.writeHead(200, { 'Content-Type': mimeTypes[ext] || 'application/octet-stream', 'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=31536000, immutable' });
+    const isVersionedAsset = ext !== '.html' && ext !== '.css' && ext !== '.js';
+    const cacheControl = ext === '.html'
+      ? 'no-cache'
+      : isVersionedAsset
+        ? 'public, max-age=31536000, immutable'
+        : 'public, max-age=0, must-revalidate';
+    res.writeHead(200, { 'Content-Type': mimeTypes[ext] || 'application/octet-stream', 'Cache-Control': cacheControl });
     res.end(data);
   });
 });

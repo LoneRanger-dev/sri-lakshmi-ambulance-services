@@ -41,17 +41,19 @@ h1,h2,h3,h4 { margin: 0 0 1rem; line-height: 1.2; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: .75rem;
   min-height: 76px;
 }
-.brand { display: flex; align-items: center; gap: .75rem; }
+.brand { display: flex; align-items: center; gap: .75rem; flex-shrink: 0; }
 .brand-mark { width: 74px; height: 54px; object-fit: contain; background: var(--white); }
 .brand-name {
   font-size: 1rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  white-space: nowrap;
 }
 .header-phone {
   display: none;
   font-weight: 700; color: var(--brand-red-dark);
+  flex-shrink: 0; white-space: nowrap;
 }
 @media (min-width: 700px) { .header-phone { display: inline-flex; } }
 .nav {
@@ -60,8 +62,14 @@ h1,h2,h3,h4 { margin: 0 0 1rem; line-height: 1.2; }
   gap: 1rem;
   font-size: .95rem;
   font-weight: 700;
+  flex-wrap: nowrap;
 }
-.nav a { color: var(--muted); padding: .55rem .8rem; border-radius: 999px; }
+.nav a { color: var(--muted); padding: .55rem .8rem; border-radius: 999px; white-space: nowrap; }
+@media (max-width: 1060px) {
+  .nav { gap: .25rem; }
+  .nav a { padding: .5rem .5rem; font-size: .88rem; }
+  .brand-name { font-size: .88rem; }
+}
 .nav a:hover, .nav a:focus-visible, .nav a[aria-current="page"] {
   background: var(--brand-red-soft); color: var(--brand-red-dark);
   outline: 2px solid transparent;
@@ -194,3 +202,60 @@ textarea { min-height: 140px; resize: vertical; }
   .nav { display: none; }
   .brand-name { font-size: .82rem; }
 }
+
+/* Scroll-reveal entrance animations */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s cubic-bezier(.16,.84,.44,1), transform .7s cubic-bezier(.16,.84,.44,1);
+  transition-delay: var(--reveal-delay, 0s);
+}
+[data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+
+/* Sticky header depth on scroll */
+.topbar { transition: box-shadow .3s ease; }
+.topbar.is-scrolled { box-shadow: 0 8px 24px rgba(17,24,39,0.08); }
+
+/* Nav link underline sweep */
+.nav a { position: relative; }
+.nav a::after {
+  content: ''; position: absolute; left: .8rem; right: .8rem; bottom: .3rem; height: 2px;
+  background: var(--brand-red); border-radius: 2px; transform: scaleX(0); transform-origin: left;
+  transition: transform .25s ease;
+}
+.nav a:hover::after, .nav a[aria-current="page"]::after { transform: scaleX(1); }
+
+/* Card & list hover lift */
+.card, .service-card, .contact-item, .area-list li {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover, .service-card:hover, .contact-item:hover, .area-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(17,24,39,0.10);
+}
+
+/* WhatsApp urgency pulse */
+.whatsapp { position: relative; }
+.whatsapp::before {
+  content: ''; position: absolute; inset: 0; border-radius: inherit;
+  box-shadow: 0 0 0 0 rgba(8,127,62,0.55);
+  animation: wa-pulse 2.2s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes wa-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(8,127,62,0.55); }
+  70% { box-shadow: 0 0 0 14px rgba(8,127,62,0); }
+  100% { box-shadow: 0 0 0 0 rgba(8,127,62,0); }
+}
+
+/* Lazy image fade-in once loaded (avoids layout pop) */
+img[loading="lazy"] { opacity: 0; transition: opacity .5s ease; }
+img[loading="lazy"].is-loaded { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { transition: none !important; opacity: 1 !important; transform: none !important; }
+  .whatsapp::before { animation: none; }
+  .card, .service-card, .contact-item, .area-list li { transition: none; }
+  html { scroll-behavior: auto; }
+}
+

@@ -83,3 +83,97 @@ function setupForm() {
 
 installTracking();
 setupForm();
+setupScrollReveal();
+setupCounters();
+setupHeaderScroll();
+setupImageFade();
+
+function setupScrollReveal() {
+  const items = document.querySelectorAll('[data-reveal]');
+  if (!items.length) return;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    items.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  items.forEach((el, index) => {
+    if (!el.style.getPropertyValue('--reveal-delay')) {
+      el.style.setProperty('--reveal-delay', `${Math.min(index % 6, 5) * 0.08}s`);
+    }
+    observer.observe(el);
+  });
+}
+
+function setupCounters() {
+  const counters = document.querySelectorAll('[data-counter]');
+  if (!counters.length) return;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animate(el) {
+    const target = parseFloat(el.dataset.counter);
+    const suffix = el.dataset.suffix || '';
+    const decimals = el.dataset.counter.includes('.') ? 1 : 0;
+    if (reduceMotion) {
+      el.textContent = `${target.toFixed(decimals)}${suffix}`;
+      return;
+    }
+    const duration = 1200;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = `${(target * eased).toFixed(decimals)}${suffix}`;
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    counters.forEach(animate);
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animate(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach((el) => observer.observe(el));
+}
+
+function setupHeaderScroll() {
+  const header = document.querySelector('.topbar');
+  if (!header) return;
+  let ticking = false;
+  function update() {
+    header.classList.toggle('is-scrolled', window.scrollY > 8);
+    ticking = false;
+  }
+  document.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+  update();
+}
+
+function setupImageFade() {
+  document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+    if (img.complete && img.naturalWidth > 0) {
+      img.classList.add('is-loaded');
+      return;
+    }
+    img.addEventListener('load', () => img.classList.add('is-loaded'), { once: true });
+  });
+}
