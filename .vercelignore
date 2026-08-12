@@ -1,0 +1,11 @@
+_mirror
+node_modules
+crawl-source.js
+build-assets.js
+server.js
+verify-render.js
+package.json
+package-lock.json
+capture-validation.js
+validation
+validation-home-*.png
