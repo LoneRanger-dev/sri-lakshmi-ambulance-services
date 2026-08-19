@@ -1,34 +1,58 @@
-const trackingEnabled = !!(window.ADS_ID && !window.ADS_ID.includes('X') && window.ADS_LABEL && !window.ADS_LABEL.includes('X'));
+const adsIdValid = !!(window.ADS_ID && window.ADS_ID.startsWith('AW-') && !window.ADS_ID.includes('X'));
+const adsLabelValid = !!(window.ADS_LABEL && !window.ADS_LABEL.includes('X'));
+const ga4Valid = !!(window.GA4_ID && window.GA4_ID.startsWith('G-') && !window.GA4_ID.includes('X'));
 
 function fireTracking(type, buttonName) {
-  if (!window.gtag && !trackingEnabled) return;
-
   if (typeof window.gtag === 'function') {
+    // General engagement / analytics event
     window.gtag('event', 'ambulance_click', {
       event_category: 'cta',
       event_label: buttonName,
       click_type: type
     });
-  }
 
-  if (type === 'tel' && trackingEnabled && typeof window.gtag === 'function') {
-    window.gtag('event', 'conversion', {
-      send_to: `${window.ADS_ID}/${window.ADS_LABEL}`,
-      value: 1.0,
-      currency: 'INR'
-    });
+    if (type === 'tel') {
+      window.gtag('event', 'phone_call_click', {
+        event_category: 'emergency_lead',
+        event_label: buttonName
+      });
+
+      // Google Ads Call Conversion Event
+      if (adsIdValid && adsLabelValid) {
+        window.gtag('event', 'conversion', {
+          send_to: `${window.ADS_ID}/${window.ADS_LABEL}`,
+          value: 1.0,
+          currency: 'INR'
+        });
+        console.log(`[Google Ads] Conversion event sent to ${window.ADS_ID}/${window.ADS_LABEL}`);
+      }
+    }
   }
 }
 
 function installTracking() {
-  if (window.ADS_ID && window.ADS_ID !== 'AW-XXXXXXXXXX' && window.GA4_ID) {
+  const primaryId = adsIdValid ? window.ADS_ID : (ga4Valid ? window.GA4_ID : null);
+  if (!primaryId) {
+    console.log('[Tracking] No valid Google Ads ID or GA4 ID configured yet.');
+    return;
+  }
+
+  // Load gtag script dynamically
+  if (!document.querySelector(`script[src*="googletagmanager.com/gtag/js"]`)) {
     const script = document.createElement('script');
     script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${window.GA4_ID}`;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${primaryId}`;
     document.head.appendChild(script);
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function() { window.dataLayer.push(arguments); };
-    window.gtag('js', new Date());
+  }
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+
+  if (adsIdValid) {
+    window.gtag('config', window.ADS_ID);
+  }
+  if (ga4Valid) {
     window.gtag('config', window.GA4_ID);
   }
 
