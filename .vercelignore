@@ -9,3 +9,10 @@ package-lock.json
 capture-validation.js
 validation
 validation-home-*.png
+templates
+clients
+scripts
+client.config.json
+CLIENT_SETUP_GUIDE.md
+NOTES.md
+AGENT-PROMPT-rebuild-site.md
