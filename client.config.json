@@ -4,11 +4,11 @@
     "name": "Sri Lakshmi Ambulance Services",
     "shortName": "Sri Lakshmi Ambulance",
     "owner": "Raj Shekar Reddy",
-    "tagline": "24X7 Mobile Freezer Box, Ambulance & Car Available",
-    "heroEyebrow": "24/7 Emergency Ambulance & Freezer Box in Health City, Arilova",
+    "tagline": "Every Journey Is A Life Saving Mission • 24X7 Mobile Freezer Box, ICU & Ambulance Available",
+    "heroEyebrow": "24/7 Emergency Ambulance & Freezer Box in Health City, Arilova & Seethammadhara",
     "heroTitle": "24/7 Emergency Ambulance & Mobile Freezer Box Services",
-    "heroCopy": "FAST CARE. SAFE HANDS. SAVING LIVES. Prompt emergency ambulance services, mobile freezer box, and patient transport in Health City, Arilova, and across Visakhapatnam.",
-    "regionalNote": "24 గంటలూ అంబులెన్స్ & మొబైల్ ఫ్రీజర్ బాక్స్ సేవలు — హెల్త్ సిటీ, అరిలోవ, విశాఖపట్నం",
+    "heroCopy": "Every Journey Is A Life Saving Mission. Prompt emergency D-Level ICU ambulance services, mobile freezer box, and A/C patient transport in Health City, Arilova, Seethammadhara, and across Visakhapatnam.",
+    "regionalNote": "24 గంటలూ అత్యవసర అంబులెన్స్ & మొబైల్ ఫ్రీజర్ బాక్స్ సేవలు — విశాఖపట్నం",
     "operatingHours": "24 hours, 7 days (24X7 Services Available)",
     "rating": "4.9",
     "reviewCount": "85",
@@ -24,12 +24,12 @@
     "email": "raazvinnu@gmail.com",
     "address": {
       "street": "Health City, Arilova",
-      "locality": "Arilova",
+      "locality": "Arilova & Seethammadhara",
       "region": "Visakhapatnam",
       "state": "Andhra Pradesh",
       "postalCode": "530040",
       "country": "IN",
-      "full": "Health City, Arilova, Visakhapatnam, Andhra Pradesh 530040"
+      "full": "Health City, Arilova, Visakhapatnam, Andhra Pradesh 530040 (Also serving KIMS Hospitals, Seethammadhara)"
     },
     "geo": {
       "latitude": 17.75816,
@@ -44,8 +44,8 @@
       "width": 180,
       "height": 45
     },
-    "heroImage": "/assets/img/ambulance-exterior.webp",
-    "ogImage": "https://srilakshmiambulance.com/assets/img/ambulance-exterior.jpg",
+    "heroImage": "/assets/img/icu-ambulance.webp",
+    "ogImage": "https://sri-lakshmi-ambulance-services.vercel.app/assets/img/icu-ambulance.jpg",
     "themeColor": "#e3161c",
     "colors": {
       "brandPrimary": "#e3161c",
@@ -62,45 +62,62 @@
   },
   "services": [
     {
-      "id": "emergency",
-      "title": "24/7 Emergency Ambulance",
-      "description": "Rapid emergency medical response equipped with oxygen support and trained paramedics available 24/7.",
-      "image": "/assets/img/ambulance-exterior.webp",
-      "imageAlt": "Sri Lakshmi Emergency Ambulance in Health City"
+      "id": "icu",
+      "title": "D-Level ICU Ambulance",
+      "description": "Critical care ambulance equipped with transport ventilator, multi-para monitors, and emergency medical personnel.",
+      "image": "/assets/img/icu-ambulance.webp",
+      "imageAlt": "D-Level ICU Ambulance in Visakhapatnam"
     },
     {
       "id": "freezer-box",
       "title": "Mobile Freezer Box Service",
-      "description": "Hygienic, temperature-controlled mobile mortuary freezer boxes for dignified preservation and long-distance transport.",
-      "image": "/assets/img/patient-transfer.webp",
-      "imageAlt": "Mobile Freezer Box and Ambulance Service"
+      "description": "Specialized temperature-controlled mortuary freezer box unit for dignified local and inter-state preservation and transport.",
+      "image": "/assets/img/freezer-box-ambulance.webp",
+      "imageAlt": "Mobile Freezer Box Ambulance Unit"
     },
     {
-      "id": "patient-transfer",
-      "title": "Patient Transport & Medical Car",
-      "description": "Comfortable non-emergency patient transfer between hospitals, medical appointments, and homes with dedicated care.",
-      "image": "/assets/img/ambulance-interior.webp",
-      "imageAlt": "Ambulance Interior with Patient Stretcher"
+      "id": "ac-patient-transfer",
+      "title": "A/C Patient Transport Ambulance",
+      "description": "Comfortable air-conditioned patient transport with stretcher trolley between hospitals, clinics, and residences.",
+      "image": "/assets/img/eeco-ambulance.webp",
+      "imageAlt": "Maruti Eeco AC Patient Transport Ambulance"
     }
   ],
   "ambulanceTypes": [
     {
-      "name": "Basic Life Support (BLS) Ambulance",
-      "features": ["Continuous oxygen delivery", "Wheeled stretcher trolley", "First aid equipment", "Trained EMT driver"]
+      "name": "D-Level ICU Ambulance (ALS)",
+      "features": [
+        "Transport ventilator support",
+        "Multi-channel cardiac monitor",
+        "Emergency oxygen setup",
+        "Critical care paramedic team",
+        "KIMS Hospitals network presence"
+      ]
     },
     {
-      "name": "Mobile Freezer Box Van",
-      "features": ["Stainless steel chilling unit", "Dignified preservation", "Long-distance & inter-state transfer", "Sanitized vehicle"]
+      "name": "Mobile Freezer Box Unit",
+      "features": [
+        "Integrated stainless steel chilling unit",
+        "Continuous temperature control",
+        "Dignified preservation",
+        "Long-distance and inter-state transport"
+      ]
     },
     {
-      "name": "Patient Transport & Escort Car",
-      "features": ["Air-conditioned comfort", "Hospital discharge transfer", "Doctor appointment visits", "Wheelchair assistance"]
+      "name": "Maruti Eeco A/C Ambulance (BLS)",
+      "features": [
+        "Air-conditioned patient cabin",
+        "Smooth wheeled stretcher bed",
+        "Attendant passenger seating",
+        "24x7 immediate city dispatch"
+      ]
     }
   ],
   "serviceAreas": [
     "Health City",
     "Arilova",
     "Hanumanthavaka",
+    "Seethammadhara",
     "MVP Colony",
     "Maddilapalem",
     "Visakhapatnam City",
@@ -112,16 +129,28 @@
   ],
   "gallery": [
     {
-      "src": "/assets/img/ambulance-exterior.webp",
-      "alt": "Sri Lakshmi Mahindra Bolero Ambulance at Health City"
+      "src": "/assets/img/icu-ambulance.webp",
+      "alt": "D-Level ICU Ambulance - Sri Lakshmi Ambulance Services"
+    },
+    {
+      "src": "/assets/img/freezer-box-ambulance.webp",
+      "alt": "Built-in Mobile Freezer Box Ambulance Unit"
+    },
+    {
+      "src": "/assets/img/eeco-ambulance.webp",
+      "alt": "Maruti Eeco AC Emergency Ambulance"
+    },
+    {
+      "src": "/assets/img/mission-ambulance.webp",
+      "alt": "Every Journey Is A Life Saving Mission - Sri Lakshmi Ambulance"
     },
     {
       "src": "/assets/img/ambulance-interior.webp",
-      "alt": "Ambulance interior with patient stretcher bed and seating"
+      "alt": "Clean patient stretcher bed and attendant seating interior"
     },
     {
-      "src": "/assets/img/ambulance-team.webp",
-      "alt": "Dedicated emergency paramedic care team"
+      "src": "/assets/img/eeco-rear.webp",
+      "alt": "Eeco 24x7 Emergency Ambulance Rear View"
     }
   ],
   "socialMedia": {
@@ -132,22 +161,22 @@
     "justdial": ""
   },
   "seo": {
-    "domain": "https://srilakshmiambulance.com",
+    "domain": "https://sri-lakshmi-ambulance-services.vercel.app",
     "home": {
-      "title": "24/7 Ambulance Service in Health City, Arilova | Sri Lakshmi Ambulance Services",
-      "description": "24/7 emergency ambulance & mobile freezer box in Health City, Arilova, Visakhapatnam. Fast response, patient transport. Call +91 91824 79159."
+      "title": "24/7 Ambulance & Freezer Box in Health City, Arilova | Sri Lakshmi Ambulance",
+      "description": "24/7 emergency D-Level ICU ambulance & mobile freezer box in Health City, Arilova, Seethammadhara, Visakhapatnam. Fast response. Call +91 91824 79159."
     },
     "about": {
       "title": "About Us | Sri Lakshmi Ambulance Services Health City Vizag",
-      "description": "Sri Lakshmi Ambulance Services - 24/7 emergency ambulance, mobile freezer box, and patient transport in Health City, Arilova, Visakhapatnam."
+      "description": "Sri Lakshmi Ambulance Services - 24/7 D-Level ICU ambulance, mobile freezer box, and A/C patient transport in Visakhapatnam. Call +91 91824 79159."
     },
     "services": {
-      "title": "Ambulance & Freezer Box Services in Visakhapatnam | Sri Lakshmi Ambulance",
-      "description": "Emergency ambulance, mobile freezer box, and patient transport services in Health City, Arilova, Visakhapatnam. Call +91 91824 79159."
+      "title": "ICU Ambulance & Freezer Box Services in Visakhapatnam | Sri Lakshmi Ambulance",
+      "description": "D-Level ICU ambulance, mobile freezer box, and AC patient transport services in Health City, Arilova, Visakhapatnam. Call +91 91824 79159."
     },
     "contact": {
       "title": "Contact Sri Lakshmi Ambulance Services | Health City, Arilova, Visakhapatnam",
-      "description": "Contact Raj Shekar Reddy at Sri Lakshmi Ambulance Services in Health City, Arilova, Visakhapatnam. 24/7 call: +91 91824 79159 or +91 73822 26585."
+      "description": "Contact Raj Shekar Reddy at Sri Lakshmi Ambulance Services. 24/7 emergency ambulance & mobile freezer box in Visakhapatnam. Call: +91 91824 79159 or +91 73822 26585."
     },
     "googleSiteVerification": []
   },
