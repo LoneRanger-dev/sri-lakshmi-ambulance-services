@@ -9,6 +9,6 @@ window.CLIENT_CONFIG = {
   "whatsappNumber": "+919182479159",
   "whatsappPrefill": "I need an ambulance / freezer box urgently from Sri Lakshmi Ambulance Services. My location is: ",
   "email": "raazvinnu@gmail.com",
-  "address": "Health City, Arilova, Visakhapatnam, Andhra Pradesh 530040 (Also serving KIMS Hospitals, Seethammadhara)",
+  "address": "Health City, Arilova, Visakhapatnam 530040 (Serving MVP Colony, Madhurawada, NAD Junction & Seethammadhara)",
   "operatingHours": "24 hours, 7 days (24X7 Services Available)"
 };

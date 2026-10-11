@@ -5,10 +5,10 @@
     "shortName": "Sri Lakshmi Ambulance",
     "owner": "Raj Shekar Reddy",
     "tagline": "Every Journey Is A Life Saving Mission • 24X7 Mobile Freezer Box, ICU & Ambulance Available",
-    "heroEyebrow": "24/7 Emergency Ambulance & Freezer Box in Health City, Arilova & Seethammadhara",
+    "heroEyebrow": "24/7 Emergency Ambulance in MVP, Madhurawada, NAD & Seethammadhara",
     "heroTitle": "24/7 Emergency Ambulance & Mobile Freezer Box Services",
-    "heroCopy": "Every Journey Is A Life Saving Mission. Prompt emergency D-Level ICU ambulance services, mobile freezer box, and A/C patient transport in Health City, Arilova, Seethammadhara, and across Visakhapatnam.",
-    "regionalNote": "24 గంటలూ అత్యవసర అంబులెన్స్ & మొబైల్ ఫ్రీజర్ బాక్స్ సేవలు — విశాఖపట్నం",
+    "heroCopy": "Every Journey Is A Life Saving Mission. Prompt emergency D-Level ICU ambulance services, mobile freezer box, and A/C patient transport across MVP Colony, Madhurawada, NAD Junction, Seethammadhara, Health City, Arilova, and all of Visakhapatnam.",
+    "regionalNote": "24 గంటలూ అత్యవసర అంబులెన్స్ & మొబైల్ ఫ్రీజర్ బాక్స్ సేవలు — MVP, మధురవాడ, NAD, సీతమ్మధార, విశాఖపట్నం",
     "operatingHours": "24 hours, 7 days (24X7 Services Available)",
     "rating": "4.9",
     "reviewCount": "85",
@@ -24,12 +24,12 @@
     "email": "raazvinnu@gmail.com",
     "address": {
       "street": "Health City, Arilova",
-      "locality": "Arilova & Seethammadhara",
+      "locality": "MVP, Madhurawada, NAD & Seethammadhara",
       "region": "Visakhapatnam",
       "state": "Andhra Pradesh",
       "postalCode": "530040",
       "country": "IN",
-      "full": "Health City, Arilova, Visakhapatnam, Andhra Pradesh 530040 (Also serving KIMS Hospitals, Seethammadhara)"
+      "full": "Health City, Arilova, Visakhapatnam 530040 (Serving MVP Colony, Madhurawada, NAD Junction & Seethammadhara)"
     },
     "geo": {
       "latitude": 17.75816,
@@ -114,16 +114,17 @@
     }
   ],
   "serviceAreas": [
+    "MVP Colony",
+    "Madhurawada",
+    "NAD Junction",
+    "Seethammadhara",
     "Health City",
     "Arilova",
     "Hanumanthavaka",
-    "Seethammadhara",
-    "MVP Colony",
     "Maddilapalem",
     "Visakhapatnam City",
     "Simhachalam",
     "Pendurthi",
-    "NAD Junction",
     "Gajuwaka",
     "Anakapalli"
   ],
@@ -163,19 +164,19 @@
   "seo": {
     "domain": "https://sri-lakshmi-ambulance-services.vercel.app",
     "home": {
-      "title": "24/7 Ambulance & Freezer Box in Health City, Arilova | Sri Lakshmi Ambulance",
-      "description": "24/7 emergency D-Level ICU ambulance & mobile freezer box in Health City, Arilova, Seethammadhara, Visakhapatnam. Fast response. Call +91 91824 79159."
+      "title": "24/7 Ambulance in MVP, Madhurawada, NAD & Seethammadhara | Sri Lakshmi Ambulance",
+      "description": "24/7 emergency D-Level ICU ambulance & mobile freezer box in MVP Colony, Madhurawada, NAD, Seethammadhara, Health City, Visakhapatnam. Fast response. Call +91 91824 79159."
     },
     "about": {
-      "title": "About Us | Sri Lakshmi Ambulance Services Health City Vizag",
-      "description": "Sri Lakshmi Ambulance Services - 24/7 D-Level ICU ambulance, mobile freezer box, and A/C patient transport in Visakhapatnam. Call +91 91824 79159."
+      "title": "About Us | Sri Lakshmi Ambulance Services Visakhapatnam",
+      "description": "Sri Lakshmi Ambulance Services - 24/7 D-Level ICU ambulance, mobile freezer box, and A/C patient transport across MVP, Madhurawada, NAD, Seethammadhara, Visakhapatnam. Call +91 91824 79159."
     },
     "services": {
-      "title": "ICU Ambulance & Freezer Box Services in Visakhapatnam | Sri Lakshmi Ambulance",
-      "description": "D-Level ICU ambulance, mobile freezer box, and AC patient transport services in Health City, Arilova, Visakhapatnam. Call +91 91824 79159."
+      "title": "Ambulance in MVP, Madhurawada, NAD & Seethammadhara | Sri Lakshmi Ambulance",
+      "description": "24/7 emergency ICU ambulance, mobile freezer box, and AC patient transport services in MVP Colony, Madhurawada, NAD, Seethammadhara, Visakhapatnam. Call +91 91824 79159."
     },
     "contact": {
-      "title": "Contact Sri Lakshmi Ambulance Services | Health City, Arilova, Visakhapatnam",
+      "title": "Contact Sri Lakshmi Ambulance | MVP, Madhurawada, NAD & Seethammadhara",
       "description": "Contact Raj Shekar Reddy at Sri Lakshmi Ambulance Services. 24/7 emergency ambulance & mobile freezer box in Visakhapatnam. Call: +91 91824 79159 or +91 73822 26585."
     },
     "googleSiteVerification": []
