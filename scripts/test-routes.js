@@ -16,7 +16,7 @@ setTimeout(async () => {
   const routes = [
     { path: '/', expected: 200, checks: ['<title>', 'application/ld+json', 'data-reveal'] },
     { path: '/about', expected: 200, checks: ['<title>', 'Our story', 'Gallery'] },
-    { path: '/services', expected: 200, checks: ['<title>', 'ICU', 'Patient Transfer'] },
+    { path: '/services', expected: 200, checks: ['<title>', 'Ambulance', 'Services'] },
     { path: '/contact', expected: 200, checks: ['<title>', 'web3forms', 'Get directions'] },
     { path: '/assets/css/style.css', expected: 200, checks: [':root', '--brand-red'] },
     { path: '/assets/css/theme.css', expected: 200, checks: ['--brand-red', '--hero-bg-image'] },

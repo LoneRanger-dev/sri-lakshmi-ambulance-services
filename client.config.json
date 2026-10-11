@@ -1,50 +1,51 @@
 {
-  "id": "saikumarambulance",
+  "id": "srilakshmiambulance",
   "business": {
-    "name": "Sai Kumar Ambulance Service",
-    "shortName": "Sai Kumar Ambulance",
-    "tagline": "FAST CARE. SAFE HANDS. SAVING LIVES.",
-    "heroEyebrow": "24/7 Emergency Ambulance in Gajuwaka",
-    "heroTitle": "24/7 Emergency Ambulance Service in Gajuwaka",
-    "heroCopy": "FAST CARE. SAFE HANDS. SAVING LIVES. Prompt emergency ambulance service in Gajuwaka, Chinagantyada, and across Visakhapatnam with ICU and patient transfer support.",
-    "regionalNote": "24 గంటలూ అంబులెన్స్ సేవ — గాజువాక, విశాఖపట్నం",
-    "operatingHours": "24 hours, 7 days",
-    "rating": "4.8",
-    "reviewCount": "71",
+    "name": "Sri Lakshmi Ambulance Services",
+    "shortName": "Sri Lakshmi Ambulance",
+    "owner": "Raj Shekar Reddy",
+    "tagline": "24X7 Mobile Freezer Box, Ambulance & Car Available",
+    "heroEyebrow": "24/7 Emergency Ambulance & Freezer Box in Health City, Arilova",
+    "heroTitle": "24/7 Emergency Ambulance & Mobile Freezer Box Services",
+    "heroCopy": "FAST CARE. SAFE HANDS. SAVING LIVES. Prompt emergency ambulance services, mobile freezer box, and patient transport in Health City, Arilova, and across Visakhapatnam.",
+    "regionalNote": "24 గంటలూ అంబులెన్స్ & మొబైల్ ఫ్రీజర్ బాక్స్ సేవలు — హెల్త్ సిటీ, అరిలోవ, విశాఖపట్నం",
+    "operatingHours": "24 hours, 7 days (24X7 Services Available)",
+    "rating": "4.9",
+    "reviewCount": "85",
     "reviewPlatform": "Google reviews"
   },
   "contact": {
-    "primaryPhone": "+91 90001 47902",
-    "primaryPhoneRaw": "+919000147902",
-    "secondaryPhone": "+91 77024 38902",
-    "secondaryPhoneRaw": "+917702438902",
-    "whatsappNumber": "+919000147902",
-    "whatsappPrefill": "I need an ambulance urgently. My location is: ",
-    "email": "sk2600718@gmail.com",
+    "primaryPhone": "+91 91824 79159",
+    "primaryPhoneRaw": "+919182479159",
+    "secondaryPhone": "+91 73822 26585",
+    "secondaryPhoneRaw": "+917382226585",
+    "whatsappNumber": "+919182479159",
+    "whatsappPrefill": "I need an ambulance / freezer box urgently from Sri Lakshmi Ambulance Services. My location is: ",
+    "email": "raazvinnu@gmail.com",
     "address": {
-      "street": "Harini Hospital Road, R K, Chinagantyada",
-      "locality": "Gajuwaka",
+      "street": "Health City, Arilova",
+      "locality": "Arilova",
       "region": "Visakhapatnam",
       "state": "Andhra Pradesh",
-      "postalCode": "530026",
+      "postalCode": "530040",
       "country": "IN",
-      "full": "Harini Hospital Road, R K, Chinagantyada, Gajuwaka, Visakhapatnam, Andhra Pradesh 530026"
+      "full": "Health City, Arilova, Visakhapatnam, Andhra Pradesh 530040"
     },
     "geo": {
-      "latitude": 17.6888,
-      "longitude": 83.2185
+      "latitude": 17.75816,
+      "longitude": 83.329681
     },
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Harini%20Hospital%20Road%2C%20Gajuwaka%2C%20Visakhapatnam"
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Health%20City%2C%20Arilova%2C%20Visakhapatnam"
   },
   "branding": {
     "logo": {
       "src": "/assets/img/logo.webp",
-      "alt": "Sai Kumar Ambulance Service logo",
-      "width": 74,
-      "height": 54
+      "alt": "Sri Lakshmi Ambulance Services logo",
+      "width": 180,
+      "height": 45
     },
     "heroImage": "/assets/img/ambulance-exterior.webp",
-    "ogImage": "https://saikumarambulance.com/assets/img/ambulance-exterior.jpg",
+    "ogImage": "https://srilakshmiambulance.com/assets/img/ambulance-exterior.jpg",
     "themeColor": "#e3161c",
     "colors": {
       "brandPrimary": "#e3161c",
@@ -61,69 +62,66 @@
   },
   "services": [
     {
-      "id": "icu",
-      "title": "ICU Ambulance",
-      "description": "Fully equipped ICU ambulances ensuring critical care during transport.",
-      "image": "/assets/img/ambulance-interior.webp",
-      "imageAlt": "Interior of a Sai Kumar equipped ambulance"
-    },
-    {
-      "id": "transfer",
-      "title": "Patient Transfer",
-      "description": "Safe and comfortable patient transfers between hospitals or homes.",
-      "image": "/assets/img/patient-transfer.webp",
-      "imageAlt": "Sai Kumar staff transferring a patient into an ambulance"
-    },
-    {
       "id": "emergency",
-      "title": "Emergency Response",
-      "description": "Rapid ambulance response with trained paramedics ready to assist you anytime, anywhere.",
-      "image": "/assets/img/ambulance-fleet.webp",
-      "imageAlt": "Sai Kumar ambulance fleet"
+      "title": "24/7 Emergency Ambulance",
+      "description": "Rapid emergency medical response equipped with oxygen support and trained paramedics available 24/7.",
+      "image": "/assets/img/ambulance-exterior.webp",
+      "imageAlt": "Sri Lakshmi Emergency Ambulance in Health City"
+    },
+    {
+      "id": "freezer-box",
+      "title": "Mobile Freezer Box Service",
+      "description": "Hygienic, temperature-controlled mobile mortuary freezer boxes for dignified preservation and long-distance transport.",
+      "image": "/assets/img/patient-transfer.webp",
+      "imageAlt": "Mobile Freezer Box and Ambulance Service"
+    },
+    {
+      "id": "patient-transfer",
+      "title": "Patient Transport & Medical Car",
+      "description": "Comfortable non-emergency patient transfer between hospitals, medical appointments, and homes with dedicated care.",
+      "image": "/assets/img/ambulance-interior.webp",
+      "imageAlt": "Ambulance Interior with Patient Stretcher"
     }
   ],
   "ambulanceTypes": [
     {
-      "name": "Advanced Life Support (ALS / ICU)",
-      "features": ["Ventilator support", "Multi-para monitor", "Defibrillator", "Emergency oxygen", "Critical care paramedic"]
+      "name": "Basic Life Support (BLS) Ambulance",
+      "features": ["Continuous oxygen delivery", "Wheeled stretcher trolley", "First aid equipment", "Trained EMT driver"]
     },
     {
-      "name": "Basic Life Support (BLS)",
-      "features": ["Stretcher and wheelchair", "Oxygen cylinder", "First aid kit", "Trained EMT/driver", "Patient transport"]
+      "name": "Mobile Freezer Box Van",
+      "features": ["Stainless steel chilling unit", "Dignified preservation", "Long-distance & inter-state transfer", "Sanitized vehicle"]
     },
     {
-      "name": "Dead Body Freezer Box / Mortuary",
-      "features": ["Temperature-controlled box", "Dignified transport", "Long-distance service", "Sanitized vehicle"]
+      "name": "Patient Transport & Escort Car",
+      "features": ["Air-conditioned comfort", "Hospital discharge transfer", "Doctor appointment visits", "Wheelchair assistance"]
     }
   ],
   "serviceAreas": [
-    "Gajuwaka",
-    "Kurmannapalem",
-    "Steel Plant Township",
+    "Health City",
+    "Arilova",
+    "Hanumanthavaka",
+    "MVP Colony",
+    "Maddilapalem",
+    "Visakhapatnam City",
+    "Simhachalam",
+    "Pendurthi",
     "NAD Junction",
-    "Malkapuram",
-    "Pedagantyada",
-    "Duvvada",
-    "Aganampudi",
-    "Lankelapalem",
-    "Parawada",
-    "Chinagantyada",
-    "Visakhapatnam",
-    "Anakapalli",
-    "Madhurawada"
+    "Gajuwaka",
+    "Anakapalli"
   ],
   "gallery": [
     {
-      "src": "/assets/img/ambulance-team.webp",
-      "alt": "Sai Kumar Ambulance Service team in front of an ambulance"
-    },
-    {
-      "src": "/assets/img/paramedic-care.webp",
-      "alt": "Paramedic providing patient care inside an ambulance"
-    },
-    {
       "src": "/assets/img/ambulance-exterior.webp",
-      "alt": "Sai Kumar ambulance exterior"
+      "alt": "Sri Lakshmi Mahindra Bolero Ambulance at Health City"
+    },
+    {
+      "src": "/assets/img/ambulance-interior.webp",
+      "alt": "Ambulance interior with patient stretcher bed and seating"
+    },
+    {
+      "src": "/assets/img/ambulance-team.webp",
+      "alt": "Dedicated emergency paramedic care team"
     }
   ],
   "socialMedia": {
@@ -134,32 +132,29 @@
     "justdial": ""
   },
   "seo": {
-    "domain": "https://saikumarambulance.com",
+    "domain": "https://srilakshmiambulance.com",
     "home": {
-      "title": "Ambulance Service in Gajuwaka | Sai Kumar Ambulance Service 24/7",
-      "description": "24/7 emergency ambulance service in Gajuwaka, Visakhapatnam. Fast ICU, oxygen & patient transport. 4.8★ rated. Call +91 90001 47902 for immediate response."
+      "title": "24/7 Ambulance Service in Health City, Arilova | Sri Lakshmi Ambulance Services",
+      "description": "24/7 emergency ambulance & mobile freezer box in Health City, Arilova, Visakhapatnam. Fast response, patient transport. Call +91 91824 79159."
     },
     "about": {
-      "title": "About Us | Sai Kumar Ambulance Service Gajuwaka",
-      "description": "Learn about Sai Kumar Ambulance Service in Gajuwaka, Visakhapatnam. Offering 24/7 emergency care, ICU transport, and dedicated medical support."
+      "title": "About Us | Sri Lakshmi Ambulance Services Health City Vizag",
+      "description": "Sri Lakshmi Ambulance Services - 24/7 emergency ambulance, mobile freezer box, and patient transport in Health City, Arilova, Visakhapatnam."
     },
     "services": {
-      "title": "Ambulance Services in Gajuwaka | Sai Kumar Ambulance Service",
-      "description": "24/7 emergency ambulance, ICU transport, oxygen support, and patient transfer services in Gajuwaka and Visakhapatnam by Sai Kumar Ambulance Service. Call +91 90001 47902."
+      "title": "Ambulance & Freezer Box Services in Visakhapatnam | Sri Lakshmi Ambulance",
+      "description": "Emergency ambulance, mobile freezer box, and patient transport services in Health City, Arilova, Visakhapatnam. Call +91 91824 79159."
     },
     "contact": {
-      "title": "Contact 24/7 Ambulance in Gajuwaka | Sai Kumar Ambulance Service",
-      "description": "Contact Sai Kumar Ambulance Service in Gajuwaka, Visakhapatnam. Available 24/7 for urgent ambulance dispatch and patient transfer. Call +91 90001 47902."
+      "title": "Contact Sri Lakshmi Ambulance Services | Health City, Arilova, Visakhapatnam",
+      "description": "Contact Raj Shekar Reddy at Sri Lakshmi Ambulance Services in Health City, Arilova, Visakhapatnam. 24/7 call: +91 91824 79159 or +91 73822 26585."
     },
-    "googleSiteVerification": [
-      "8jgQA_jfCXyw0tqJOvs2sQmomOdNT4NMGaPtqNubrW0",
-      "Bv55E4ImQ9n_3xUlhApou2zvdU-F7FBgtYUjOMVD6ZU"
-    ]
+    "googleSiteVerification": []
   },
   "integrations": {
     "web3formsKey": "YOUR_WEB3FORMS_KEY",
-    "googleAdsId": "AW-17080129117",
-    "googleAdsLabel": "kEWyCOnWjOQcEN2suNA_",
+    "googleAdsId": "",
+    "googleAdsLabel": "",
     "ga4Id": ""
   }
 }
