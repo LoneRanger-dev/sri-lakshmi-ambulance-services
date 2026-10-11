@@ -9,7 +9,8 @@ const { chromium } = require('playwright');
   });
   const page = await context.newPage();
 
-  await page.goto('http://localhost:8002/');
+  const targetBase = process.env.TARGET_URL || 'http://localhost:8002';
+  await page.goto(targetBase + '/');
 
   // 1. Verify desktop nav is hidden on mobile
   const desktopNavVisible = await page.locator('.nav').isVisible();
@@ -31,7 +32,7 @@ const { chromium } = require('playwright');
 
   // 4. Click About Us link in mobile drawer
   await page.click('.mobile-nav a[href="/about"]');
-  await page.waitForURL('http://localhost:8002/about');
+  await page.waitForURL(targetBase + '/about');
   console.log('Navigated to:', page.url());
 
   // 5. Verify page title or content on About page
@@ -42,12 +43,12 @@ const { chromium } = require('playwright');
   await page.click('.mobile-nav-toggle');
   await page.waitForTimeout(400);
   await page.click('.mobile-nav a[href="/services"]');
-  await page.waitForURL('http://localhost:8002/services');
+  await page.waitForURL(targetBase + '/services');
   console.log('Navigated to:', page.url());
 
   // 7. On Services page, switch to Contact via footer nav
   await page.click('.footer-nav a[href="/contact"]');
-  await page.waitForURL('http://localhost:8002/contact');
+  await page.waitForURL(targetBase + '/contact');
   console.log('Navigated via footer to:', page.url());
 
   console.log('\n Mobile navigation verification passed completely!\n');
