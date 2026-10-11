@@ -334,7 +334,7 @@ h4 {
 .hamburger-box {
   width: 22px;
   height: 16px;
-  display: inline-block;
+  display: block;
   position: relative;
 }
 
@@ -346,6 +346,7 @@ h4 {
   background-color: var(--ink);
   border-radius: 2px;
   position: absolute;
+  left: 0;
   transition: transform .25s ease, top .25s ease, background-color .25s ease;
 }
 
