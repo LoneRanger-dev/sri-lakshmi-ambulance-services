@@ -107,7 +107,25 @@
           <a href="/contact">Contact</a>
         </nav>
         <a class="header-phone" href="tel:+919182479159">Call: +91 91824 79159</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
+      <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <div class="mobile-nav-inner">
+          <a href="/">Home</a>
+          <a href="/about">About Us</a>
+          <a href="/services" aria-current="page">Services</a>
+          <a href="/contact">Contact</a>
+          <div class="mobile-nav-cta">
+            <a class="cta-primary" href="tel:+919182479159">Call: +91 91824 79159</a>
+            <a class="cta-white" href="https://wa.me/919182479159?text=I%20need%20an%20ambulance%20%2F%20freezer%20box%20urgently%20from%20Sri%20Lakshmi%20Ambulance%20Services.%20My%20location%20is%3A%20" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
 
@@ -187,9 +205,16 @@
           <strong>Sri Lakshmi Ambulance Services</strong><br />
           Health City, Arilova, Visakhapatnam 530040 (Serving MVP Colony, Madhurawada, NAD Junction & Seethammadhara)
         </div>
-        <div>© 2026 Sri Lakshmi Ambulance Services. All rights reserved.</div>
+        <nav class="footer-nav" aria-label="Footer quick links">
+          <a href="/">Home</a>
+          <a href="/about">About Us</a>
+          <a href="/services">Services</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <div class="footer-copy">© 2026 Sri Lakshmi Ambulance Services. All rights reserved.</div>
       </div>
     </footer>
+
 
     <div class="mobile-callbar" aria-label="Quick actions">
       <a class="call-now" href="tel:+919182479159" data-cta="sticky">Call Now</a>
