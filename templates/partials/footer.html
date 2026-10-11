@@ -1,16 +1,44 @@
     <footer class="footer">
       <div class="container footer-inner">
-        <div>
-          <strong>{{BUSINESS_NAME}}</strong><br />
-          {{FULL_ADDRESS}}
+        <div class="footer-col footer-brand-col">
+          <div class="footer-brand">
+            <span class="footer-title">{{BUSINESS_NAME}}</span>
+            <p class="footer-tagline">24/7 Emergency ICU Ambulance & Mobile Freezer Box Services in Visakhapatnam.</p>
+          </div>
+          <p class="footer-address">
+            <strong>Address:</strong><br />
+            {{FULL_ADDRESS}}
+          </p>
         </div>
-        <nav class="footer-nav" aria-label="Footer quick links">
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="/services">Services</a>
-          <a href="/contact">Contact</a>
-        </nav>
-        <div class="footer-copy">© {{CURRENT_YEAR}} {{BUSINESS_NAME}}. All rights reserved.</div>
+
+        <div class="footer-col footer-links-col">
+          <span class="footer-heading">Quick Navigation</span>
+          <nav class="footer-nav" aria-label="Footer quick links">
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <span class="footer-heading">24/7 Emergency Dispatch</span>
+          <p class="footer-contact-item">
+            <strong>Primary Line:</strong><br />
+            <a class="footer-phone-link" href="tel:{{PRIMARY_PHONE_RAW}}">{{PRIMARY_PHONE}}</a>
+          </p>
+{{SECONDARY_PHONE_LINE}}
+          <p class="footer-contact-item">
+            <strong>WhatsApp:</strong><br />
+            <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" target="_blank" rel="noopener">Direct WhatsApp Support</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>Availability:</strong> {{OPERATING_HOURS}}
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <div>© {{CURRENT_YEAR}} {{BUSINESS_NAME}}. All rights reserved.</div>
+        <div class="footer-subtext">Serving MVP Colony, Madhurawada, NAD Junction, Seethammadhara & Health City, Visakhapatnam.</div>
       </div>
     </footer>
-

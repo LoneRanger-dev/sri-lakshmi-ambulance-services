@@ -9,16 +9,20 @@
     <main>
       <section class="page-hero small-hero">
         <div class="container" data-reveal>
-          <div class="kicker">Contact</div>
+          <span class="eyebrow">24/7 Emergency Dispatch</span>
           <h1>Get help now</h1>
         </div>
       </section>
 
       <section class="section">
         <div class="container contact-grid">
-          <div class="card contact-box" data-reveal>
-            <h2>Request ambulance support</h2>
-            <form action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <div class="card form-card" data-reveal>
+            <div class="card-header">
+              <span class="kicker">Direct Request</span>
+              <h2>Request ambulance support</h2>
+              <p class="form-desc">For critical emergency cases, call our 24/7 phone line immediately. For planned hospital transfers or freezer box bookings, submit below.</p>
+            </div>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
               <input type="hidden" name="access_key" value="{{WEB3FORMS_KEY}}" />
               <input type="hidden" name="subject" value="Ambulance service enquiry" />
               <input type="hidden" name="from_name" value="{{BUSINESS_NAME}}" />
@@ -27,47 +31,72 @@
                 <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
               </div>
               <div class="field">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" required />
+                <label for="name">Patient / Caller Name <span class="required" aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name" required />
               </div>
               <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required />
+                <label for="email">Contact Email <span class="required" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required />
               </div>
               <div class="field">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="message">Patient Condition & Pickup Location <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" placeholder="Please describe pickup address, destination hospital, and service needed (ICU / Freezer Box / Oxygen)..." required></textarea>
               </div>
-              <div class="field">
-                <label for="consent">
+              <div class="field field-checkbox">
+                <label for="consent" class="checkbox-label">
                   <input id="consent" name="consent" type="checkbox" required />
-                  I consent to being contacted regarding this request.
+                  <span>I consent to being contacted immediately regarding this medical transfer request.</span>
                 </label>
               </div>
-              <button class="cta-primary" type="submit">Send request</button>
+              <button class="cta-primary form-submit-btn" type="submit">
+                <span>Send Emergency Request</span>
+              </button>
               <div class="form-status" aria-live="polite"></div>
             </form>
           </div>
 
-          <div class="card" data-reveal style="--reveal-delay:.1s">
-            <h2>Call or visit</h2>
+          <div class="card contact-details-card" data-reveal style="--reveal-delay:.1s">
+            <div class="card-header">
+              <span class="kicker">Direct Contact</span>
+              <h2>Call or visit</h2>
+              <p class="form-desc">Our emergency coordinators are active 24 hours a day, 7 days a week.</p>
+            </div>
             <div class="contact-list">
               <div class="contact-item">
-                <strong>Phone</strong><br />
-                <a href="tel:{{PRIMARY_PHONE_RAW}}">{{PRIMARY_PHONE}}</a><br />
+                <div class="contact-item-icon" aria-hidden="true">📞</div>
+                <div class="contact-item-text">
+                  <strong>Emergency Phone</strong>
+                  <a class="contact-link phone-highlight" href="tel:{{PRIMARY_PHONE_RAW}}">{{PRIMARY_PHONE}}</a>
 {{SECONDARY_PHONE_CONTACT_LINK}}
+                </div>
               </div>
               <div class="contact-item">
-                <strong>Email</strong><br />
-                <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+                <div class="contact-item-icon" aria-hidden="true">💬</div>
+                <div class="contact-item-text">
+                  <strong>WhatsApp Emergency</strong>
+                  <a class="contact-link wa-highlight" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" target="_blank" rel="noopener">Chat with Dispatch Coordinator</a>
+                </div>
               </div>
               <div class="contact-item">
-                <strong>Address</strong><br />
-                {{FULL_ADDRESS}}
+                <div class="contact-item-icon" aria-hidden="true">✉️</div>
+                <div class="contact-item-text">
+                  <strong>Official Email</strong>
+                  <a class="contact-link" href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+                </div>
               </div>
               <div class="contact-item">
-                <strong>Hours</strong><br />
-                {{OPERATING_HOURS}}
+                <div class="contact-item-icon" aria-hidden="true">🏥</div>
+                <div class="contact-item-text">
+                  <strong>Dispatch Station Address</strong>
+                  <address>{{FULL_ADDRESS}}</address>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">⏱️</div>
+                <div class="contact-item-text">
+                  <strong>Operating Hours</strong>
+                  <span>{{OPERATING_HOURS}} (Year-round active dispatch)</span>
+                </div>
               </div>
             </div>
           </div>
@@ -78,10 +107,15 @@
         <div class="container">
           <div class="map-box" data-reveal>
             <div class="map-placeholder">
-              <div class="kicker">Location</div>
+              <span class="kicker">Station Location</span>
               <h2>{{STREET_ADDRESS}}</h2>
               <p>{{LOCALITY}}, {{REGION}}, {{STATE}} {{POSTAL_CODE}}</p>
-              <a class="cta-primary" href="{{GOOGLE_MAPS_URL}}" target="_blank" rel="noopener">Get directions</a>
+              <div class="map-actions">
+                <a class="cta-primary" href="{{GOOGLE_MAPS_URL}}" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>Get directions</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

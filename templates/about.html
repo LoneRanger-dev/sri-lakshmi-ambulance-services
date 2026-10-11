@@ -9,7 +9,7 @@
     <main>
       <section class="page-hero small-hero">
         <div class="container" data-reveal>
-          <div class="kicker">About</div>
+          <span class="eyebrow">About Our Service</span>
           <h1>Trusted care close to home</h1>
         </div>
       </section>
@@ -21,13 +21,19 @@
             <p>At {{BUSINESS_NAME}}, we’re dedicated to swift, compassionate care, ensuring every patient in {{REGION}} and nearby areas receives safe and timely medical transport.</p>
             <p>Our approach is simple: respond quickly, remain calm under pressure, and carry every patient with respect and professionalism.</p>
           </div>
-          <div class="card" data-reveal style="--reveal-delay:.1s">
-            <h3>Mission</h3>
-            <p>Fast care</p>
-            <h3>Values</h3>
-            <p>Compassion first</p>
-            <h3>Reach</h3>
-            <p>Serving {{REGION}} and nearby areas with emergency response support across the community.</p>
+          <div class="card highlights-card" data-reveal style="--reveal-delay:.1s">
+            <div class="highlight-item">
+              <h3>Mission</h3>
+              <p>Immediate, reliable emergency ambulance response with patient-first clinical protocol.</p>
+            </div>
+            <div class="highlight-item">
+              <h3>Values</h3>
+              <p>Compassion first, professional paramedic support, and transparent, ethical emergency service.</p>
+            </div>
+            <div class="highlight-item">
+              <h3>Coverage</h3>
+              <p>Serving {{REGION}} and nearby areas with round-the-clock rapid dispatch across the community.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -35,10 +41,10 @@
       <section class="section">
         <div class="container">
           <div class="section-header" data-reveal>
-            <div class="kicker">Gallery</div>
+            <span class="kicker">Fleet Gallery</span>
             <h2>Snapshots of support and service</h2>
           </div>
-          <div class="service-grid">
+          <div class="service-grid gallery-grid">
 {{GALLERY_GRID_CARDS}}
           </div>
         </div>
@@ -46,11 +52,12 @@
 
       <section class="section">
         <div class="container contact-box" data-reveal>
-          <div class="kicker">Need help?</div>
+          <span class="kicker kicker-emergency">24/7 Rapid Response</span>
           <h2>Call {{BUSINESS_NAME}} now for immediate support.</h2>
+          <p class="cta-box-desc">Our ambulance fleet is stationed across Visakhapatnam to respond within minutes.</p>
           <div class="hero-actions">
-            <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="header">Call</a>
-            <a class="cta-white" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" data-cta="header" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="about-cta">Call Now</a>
+            <a class="cta-whatsapp" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" data-cta="about-cta" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
       </section>

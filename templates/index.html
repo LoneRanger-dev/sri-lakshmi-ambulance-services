@@ -9,22 +9,28 @@
     <main>
       <section class="hero">
         <div class="container hero-inner">
-          <div data-reveal>
-            <span class="eyebrow">{{HERO_EYEBROW}}</span>
+          <div class="hero-content" data-reveal>
+            <div class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>{{HERO_EYEBROW}}</div>
             <h1>{{HERO_TITLE}}</h1>
             <p class="hero-copy">{{HERO_COPY}}</p>
             <p class="hero-note">{{REGIONAL_NOTE}}</p>
             <div class="hero-actions">
-              <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="hero">Call Now</a>
-              <a class="cta-secondary" href="/about" data-cta="hero">About Our Service</a>
+              <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="hero">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Call Now</span>
+              </a>
+              <a class="cta-whatsapp" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" data-cta="hero" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.16 8.16 0 0 1-1.25-4.47c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.76-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.21-.18-.46-.3z"/></svg>
+                <span>WhatsApp Emergency</span>
+              </a>
             </div>
           </div>
           <div class="hero-card" aria-label="Service highlights" data-reveal style="--reveal-delay:.15s">
             <div class="mini-stat">
-              <div><strong data-counter="{{RATING}}" data-suffix="★">0★</strong><span>{{REVIEW_COUNT}} {{REVIEW_PLATFORM}}</span></div>
-              <div><strong data-counter="24" data-suffix="×7">0×7</strong><span>Always available</span></div>
-              <div><strong>Fast</strong><span>Emergency response</span></div>
-              <div><strong>Local</strong><span>{{LOCALITY}} based</span></div>
+              <div class="stat-box"><strong data-counter="{{RATING}}" data-suffix="★">0★</strong><span>{{REVIEW_COUNT}} {{REVIEW_PLATFORM}}</span></div>
+              <div class="stat-box"><strong data-counter="24" data-suffix="×7">0×7</strong><span>Always Available</span></div>
+              <div class="stat-box"><strong>Fast</strong><span>Emergency Response</span></div>
+              <div class="stat-box"><strong>Local</strong><span>{{LOCALITY}} Based</span></div>
             </div>
           </div>
         </div>
@@ -32,47 +38,66 @@
 
       <div class="trust-strip">
         <div class="container trust-inner" data-reveal>
-          <span><span data-counter="{{RATING}}" data-suffix="★">0★</span></span>
-          <span>·</span>
-          <span><span data-counter="{{REVIEW_COUNT}}" data-suffix="">0</span> {{REVIEW_PLATFORM}}</span>
-          <span>·</span>
-          <span><span data-counter="24" data-suffix="×7">0×7</span></span>
-          <span>·</span>
-          <span>Based in {{LOCALITY}}</span>
+          <div class="trust-badge">
+            <span class="trust-icon" aria-hidden="true">★</span>
+            <span class="trust-text"><strong data-counter="{{RATING}}" data-suffix="★">0★</strong> Google Rating</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-badge">
+            <span class="trust-icon" aria-hidden="true">👥</span>
+            <span class="trust-text"><strong data-counter="{{REVIEW_COUNT}}" data-suffix="+">0+</strong> Patient Reviews</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-badge">
+            <span class="trust-icon" aria-hidden="true">⏱️</span>
+            <span class="trust-text"><strong data-counter="24" data-suffix="×7">0×7</strong> Emergency Dispatch</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-badge">
+            <span class="trust-icon" aria-hidden="true">📍</span>
+            <span class="trust-text">Stationed in <strong>{{LOCALITY}}</strong></span>
+          </div>
         </div>
       </div>
 
       <section class="section">
         <div class="container">
           <div class="section-header" data-reveal>
-            <div class="kicker">About</div>
-            <h2>Compassionate care, prompt response</h2>
+            <span class="kicker">About Our Service</span>
+            <h2>Compassionate care, prompt emergency response</h2>
           </div>
           <div class="about-grid">
             <div class="card" data-reveal>
-              <p>At {{BUSINESS_NAME}}, we’re dedicated to swift, compassionate care, ensuring every patient in {{REGION}} and nearby areas receives safe and timely medical transport.</p>
+              <h3>Dedicated Healthcare Transport</h3>
+              <p>At {{BUSINESS_NAME}}, we’re dedicated to swift, compassionate care, ensuring every patient in {{REGION}} and nearby areas receives safe, dignified and timely medical transport.</p>
               <ul class="feature-list">
-                <li>Emergency and non-emergency ambulance support</li>
-                <li>Experienced staff with a patient-first approach</li>
-                <li>Quick response across local and nearby regions</li>
+                <li>ICU and emergency ambulance support equipped with ventilators and oxygen</li>
+                <li>Experienced paramedic staff with compassionate clinical protocol</li>
+                <li>Rapid dispatch across MVP Colony, Madhurawada, NAD & Seethammadhara</li>
               </ul>
             </div>
-            <div class="card" data-reveal style="--reveal-delay:.1s">
-              <h3>Mission</h3>
-              <p>Fast care</p>
-              <h3>Values</h3>
-              <p>Compassion first</p>
-              <h3>Response</h3>
-              <p>We arrive quickly to provide urgent medical care when every second counts.</p>
+            <div class="card highlights-card" data-reveal style="--reveal-delay:.1s">
+              <div class="highlight-item">
+                <h3>Mission</h3>
+                <p>Deliver life-saving medical transport with zero transit delays and full bedside care.</p>
+              </div>
+              <div class="highlight-item">
+                <h3>Values</h3>
+                <p>Clinical compassion, rapid dispatch, and dignified patient care at all times.</p>
+              </div>
+              <div class="highlight-item">
+                <h3>Response</h3>
+                <p>We arrive rapidly across Visakhapatnam to provide urgent medical assistance when seconds count.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-alt">
         <div class="container">
           <div class="section-header" data-reveal>
-            <div class="kicker">Services</div>
+            <span class="kicker">Emergency Fleet</span>
             <h2>Emergency care you can count on</h2>
           </div>
           <div class="service-grid">
@@ -84,8 +109,8 @@
       <section class="section areas">
         <div class="container">
           <div class="section-header" data-reveal>
-            <div class="kicker">Coverage</div>
-            <h2>Areas served</h2>
+            <span class="kicker">Service Coverage</span>
+            <h2>Areas served across Visakhapatnam</h2>
           </div>
           <ul class="area-list" data-reveal>
 {{SERVICE_AREAS_ITEMS}}
@@ -96,22 +121,24 @@
       <section class="section">
         <div class="container contact-grid">
           <div class="card contact-box" data-reveal>
-            <div class="kicker">Need help now?</div>
+            <span class="kicker kicker-emergency">Need Immediate Help?</span>
             <h2>Call {{BUSINESS_NAME}}</h2>
-            <p>Emergency? We’re ready to respond instantly, anytime you need us.</p>
+            <p class="cta-box-desc">Emergency? We’re ready to respond instantly, anytime day or night across Visakhapatnam.</p>
             <div class="hero-actions">
               <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="hero">Call Now</a>
-              <a class="cta-white" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" data-cta="hero" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="cta-whatsapp" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" data-cta="hero" target="_blank" rel="noopener">WhatsApp</a>
             </div>
           </div>
-          <div class="card" data-reveal style="--reveal-delay:.1s">
-            <div class="kicker">Location</div>
+          <div class="card contact-details-card" data-reveal style="--reveal-delay:.1s">
+            <span class="kicker">Station Location</span>
             <h3>{{STREET_ADDRESS}}</h3>
-            <p>{{LOCALITY}}, {{REGION}}, {{STATE}} {{POSTAL_CODE}}</p>
-            <p><strong>Hours:</strong> {{OPERATING_HOURS}}</p>
-            <p><strong>Email:</strong> <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
-            <p><strong>Primary:</strong> <a href="tel:{{PRIMARY_PHONE_RAW}}">{{PRIMARY_PHONE}}</a></p>
+            <p class="location-address">{{LOCALITY}}, {{REGION}}, {{STATE}} {{POSTAL_CODE}}</p>
+            <div class="quick-contact-rows">
+              <p><strong>Hours:</strong> {{OPERATING_HOURS}} (24/7)</p>
+              <p><strong>Email:</strong> <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+              <p><strong>Primary Line:</strong> <a class="phone-link-bold" href="tel:{{PRIMARY_PHONE_RAW}}">{{PRIMARY_PHONE}}</a></p>
 {{SECONDARY_PHONE_LINE}}
+            </div>
           </div>
         </div>
       </section>

@@ -256,7 +256,7 @@ function setupMobileNav() {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768 && drawer.classList.contains('is-open')) {
+    if (window.innerWidth >= 880 && drawer.classList.contains('is-open')) {
       closeNav();
     }
   }, { passive: true });

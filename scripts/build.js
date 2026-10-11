@@ -52,22 +52,28 @@ function renderServices(services) {
   return services.map((s, i) => {
     const delay = i > 0 ? ` style="--reveal-delay:.${(i * 8).toString().padStart(2, '0')}s"` : '';
     return `            <article class="card service-card" data-reveal${delay}>
-              <img src="${s.image}" alt="${s.imageAlt || s.title}" loading="lazy" decoding="async" />
-              <h3>${s.title}</h3>
-              <p>${s.description}</p>
+              <div class="service-media">
+                <img src="${s.image}" alt="${s.imageAlt || s.title}" loading="lazy" decoding="async" width="400" height="250" />
+              </div>
+              <div class="service-content">
+                <h3>${s.title}</h3>
+                <p>${s.description}</p>
+              </div>
             </article>`;
   }).join('\n');
 }
 
 function renderServiceAreas(areas) {
-  return areas.map((a) => `            <li>${a}</li>`).join('\n');
+  return areas.map((a) => `            <li class="area-item"><span class="area-icon" aria-hidden="true">📍</span><span>${a}</span></li>`).join('\n');
 }
 
 function renderGallery(gallery) {
   return gallery.map((item, i) => {
     const delay = i > 0 ? ` style="--reveal-delay:.${(i * 8).toString().padStart(2, '0')}s"` : '';
-    return `            <div class="card service-card" data-reveal${delay}>
-              <img src="${item.src}" alt="${item.alt}" loading="lazy" decoding="async" />
+    return `            <div class="card gallery-card" data-reveal${delay}>
+              <div class="gallery-media">
+                <img src="${item.src}" alt="${item.alt}" loading="lazy" decoding="async" width="400" height="250" />
+              </div>
             </div>`;
   }).join('\n');
 }
