@@ -1,0 +1,13 @@
+:root {
+  --brand-red: #e3161c;
+  --brand-red-dark: #b80d16;
+  --brand-red-soft: #fff1f2;
+  --brand-navy: #073b82;
+  --brand-navy-dark: #05295c;
+  --ink: #10284c;
+  --muted: #39516f;
+  --line: #e5e7eb;
+  --panel: #f8fafc;
+  --white: #ffffff;
+  --hero-bg-image: url('/assets/img/ambulance-exterior.webp');
+}

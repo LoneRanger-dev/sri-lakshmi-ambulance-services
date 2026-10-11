@@ -93,14 +93,16 @@ function setupForm() {
         headers: { Accept: 'application/json' }
       });
       const result = await response.json();
+      const fallbackPhone = (window.CLIENT_CONFIG && window.CLIENT_CONFIG.primaryPhone) || '+91 90001 47902';
       if (result.success) {
         status.textContent = 'Your request has been sent. Our team will contact you soon.';
         form.reset();
       } else {
-        status.textContent = 'Could not send. Please call directly on +91 90001 47902.';
+        status.textContent = `Could not send. Please call directly on ${fallbackPhone}.`;
       }
     } catch (error) {
-      status.textContent = 'Could not send. Please call directly on +91 90001 47902.';
+      const fallbackPhone = (window.CLIENT_CONFIG && window.CLIENT_CONFIG.primaryPhone) || '+91 90001 47902';
+      status.textContent = `Could not send. Please call directly on ${fallbackPhone}.`;
     }
   });
 }

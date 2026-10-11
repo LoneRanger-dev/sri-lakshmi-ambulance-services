@@ -1,0 +1,165 @@
+{
+  "id": "saikumarambulance",
+  "business": {
+    "name": "Sai Kumar Ambulance Service",
+    "shortName": "Sai Kumar Ambulance",
+    "tagline": "FAST CARE. SAFE HANDS. SAVING LIVES.",
+    "heroEyebrow": "24/7 Emergency Ambulance in Gajuwaka",
+    "heroTitle": "24/7 Emergency Ambulance Service in Gajuwaka",
+    "heroCopy": "FAST CARE. SAFE HANDS. SAVING LIVES. Prompt emergency ambulance service in Gajuwaka, Chinagantyada, and across Visakhapatnam with ICU and patient transfer support.",
+    "regionalNote": "24 గంటలూ అంబులెన్స్ సేవ — గాజువాక, విశాఖపట్నం",
+    "operatingHours": "24 hours, 7 days",
+    "rating": "4.8",
+    "reviewCount": "71",
+    "reviewPlatform": "Google reviews"
+  },
+  "contact": {
+    "primaryPhone": "+91 90001 47902",
+    "primaryPhoneRaw": "+919000147902",
+    "secondaryPhone": "+91 77024 38902",
+    "secondaryPhoneRaw": "+917702438902",
+    "whatsappNumber": "+919000147902",
+    "whatsappPrefill": "I need an ambulance urgently. My location is: ",
+    "email": "sk2600718@gmail.com",
+    "address": {
+      "street": "Harini Hospital Road, R K, Chinagantyada",
+      "locality": "Gajuwaka",
+      "region": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "postalCode": "530026",
+      "country": "IN",
+      "full": "Harini Hospital Road, R K, Chinagantyada, Gajuwaka, Visakhapatnam, Andhra Pradesh 530026"
+    },
+    "geo": {
+      "latitude": 17.6888,
+      "longitude": 83.2185
+    },
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Harini%20Hospital%20Road%2C%20Gajuwaka%2C%20Visakhapatnam"
+  },
+  "branding": {
+    "logo": {
+      "src": "/assets/img/logo.webp",
+      "alt": "Sai Kumar Ambulance Service logo",
+      "width": 74,
+      "height": 54
+    },
+    "heroImage": "/assets/img/ambulance-exterior.webp",
+    "ogImage": "https://saikumarambulance.com/assets/img/ambulance-exterior.jpg",
+    "themeColor": "#e3161c",
+    "colors": {
+      "brandPrimary": "#e3161c",
+      "brandPrimaryDark": "#b80d16",
+      "brandPrimarySoft": "#fff1f2",
+      "brandSecondary": "#073b82",
+      "brandSecondaryDark": "#05295c",
+      "ink": "#10284c",
+      "muted": "#39516f",
+      "line": "#e5e7eb",
+      "panel": "#f8fafc",
+      "white": "#ffffff"
+    }
+  },
+  "services": [
+    {
+      "id": "icu",
+      "title": "ICU Ambulance",
+      "description": "Fully equipped ICU ambulances ensuring critical care during transport.",
+      "image": "/assets/img/ambulance-interior.webp",
+      "imageAlt": "Interior of a Sai Kumar equipped ambulance"
+    },
+    {
+      "id": "transfer",
+      "title": "Patient Transfer",
+      "description": "Safe and comfortable patient transfers between hospitals or homes.",
+      "image": "/assets/img/patient-transfer.webp",
+      "imageAlt": "Sai Kumar staff transferring a patient into an ambulance"
+    },
+    {
+      "id": "emergency",
+      "title": "Emergency Response",
+      "description": "Rapid ambulance response with trained paramedics ready to assist you anytime, anywhere.",
+      "image": "/assets/img/ambulance-fleet.webp",
+      "imageAlt": "Sai Kumar ambulance fleet"
+    }
+  ],
+  "ambulanceTypes": [
+    {
+      "name": "Advanced Life Support (ALS / ICU)",
+      "features": ["Ventilator support", "Multi-para monitor", "Defibrillator", "Emergency oxygen", "Critical care paramedic"]
+    },
+    {
+      "name": "Basic Life Support (BLS)",
+      "features": ["Stretcher and wheelchair", "Oxygen cylinder", "First aid kit", "Trained EMT/driver", "Patient transport"]
+    },
+    {
+      "name": "Dead Body Freezer Box / Mortuary",
+      "features": ["Temperature-controlled box", "Dignified transport", "Long-distance service", "Sanitized vehicle"]
+    }
+  ],
+  "serviceAreas": [
+    "Gajuwaka",
+    "Kurmannapalem",
+    "Steel Plant Township",
+    "NAD Junction",
+    "Malkapuram",
+    "Pedagantyada",
+    "Duvvada",
+    "Aganampudi",
+    "Lankelapalem",
+    "Parawada",
+    "Chinagantyada",
+    "Visakhapatnam",
+    "Anakapalli",
+    "Madhurawada"
+  ],
+  "gallery": [
+    {
+      "src": "/assets/img/ambulance-team.webp",
+      "alt": "Sai Kumar Ambulance Service team in front of an ambulance"
+    },
+    {
+      "src": "/assets/img/paramedic-care.webp",
+      "alt": "Paramedic providing patient care inside an ambulance"
+    },
+    {
+      "src": "/assets/img/ambulance-exterior.webp",
+      "alt": "Sai Kumar ambulance exterior"
+    }
+  ],
+  "socialMedia": {
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "youtube": "",
+    "justdial": ""
+  },
+  "seo": {
+    "domain": "https://saikumarambulance.com",
+    "home": {
+      "title": "Ambulance Service in Gajuwaka | Sai Kumar Ambulance Service 24/7",
+      "description": "24/7 emergency ambulance service in Gajuwaka, Visakhapatnam. Fast ICU, oxygen & patient transport. 4.8★ rated. Call +91 90001 47902 for immediate response."
+    },
+    "about": {
+      "title": "About Us | Sai Kumar Ambulance Service Gajuwaka",
+      "description": "Learn about Sai Kumar Ambulance Service in Gajuwaka, Visakhapatnam. Offering 24/7 emergency care, ICU transport, and dedicated medical support."
+    },
+    "services": {
+      "title": "Ambulance Services in Gajuwaka | Sai Kumar Ambulance Service",
+      "description": "24/7 emergency ambulance, ICU transport, oxygen support, and patient transfer services in Gajuwaka and Visakhapatnam by Sai Kumar Ambulance Service. Call +91 90001 47902."
+    },
+    "contact": {
+      "title": "Contact 24/7 Ambulance in Gajuwaka | Sai Kumar Ambulance Service",
+      "description": "Contact Sai Kumar Ambulance Service in Gajuwaka, Visakhapatnam. Available 24/7 for urgent ambulance dispatch and patient transfer. Call +91 90001 47902."
+    },
+    "googleSiteVerification": [
+      "8jgQA_jfCXyw0tqJOvs2sQmomOdNT4NMGaPtqNubrW0",
+      "Bv55E4ImQ9n_3xUlhApou2zvdU-F7FBgtYUjOMVD6ZU"
+    ]
+  },
+  "integrations": {
+    "web3formsKey": "YOUR_WEB3FORMS_KEY",
+    "googleAdsId": "AW-17080129117",
+    "googleAdsLabel": "kEWyCOnWjOQcEN2suNA_",
+    "ga4Id": ""
+  }
+}

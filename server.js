@@ -55,11 +55,40 @@ const server = http.createServer((req, res) => {
       : isVersionedAsset
         ? 'public, max-age=31536000, immutable'
         : 'public, max-age=0, must-revalidate';
-    res.writeHead(200, { 'Content-Type': mimeTypes[ext] || 'application/octet-stream', 'Cache-Control': cacheControl });
+    const isNotFound = path.basename(filePath).toLowerCase() === '404.html' && requestUrl.pathname !== '/404.html' && requestUrl.pathname !== '/404';
+    const statusCode = isNotFound ? 404 : 200;
+    res.writeHead(statusCode, { 'Content-Type': mimeTypes[ext] || 'application/octet-stream', 'Cache-Control': cacheControl });
     res.end(data);
   });
 });
 
-server.listen(port, () => {
-  console.log(`Local static server running at http://localhost:${port}`);
-});
+function startServer(initialPort, maxAttempts = 15) {
+  let currentPort = Number(initialPort);
+  let attempts = 0;
+
+  function tryListen() {
+    const onError = (err) => {
+      if (err.code === 'EADDRINUSE') {
+        attempts++;
+        if (attempts < maxAttempts) {
+          console.warn(`[Port busy] Port ${currentPort} is already in use. Retrying on port ${currentPort + 1}...`);
+          currentPort++;
+          setTimeout(tryListen, 100);
+          return;
+        }
+      }
+      console.error(`[Error] Failed to bind server starting at port ${initialPort}:`, err.message);
+      process.exit(1);
+    };
+
+    server.once('error', onError);
+    server.listen(currentPort, () => {
+      server.removeListener('error', onError);
+      console.log(`Local static server running at http://localhost:${currentPort}`);
+    });
+  }
+
+  tryListen();
+}
+
+startServer(port);

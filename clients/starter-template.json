@@ -1,0 +1,153 @@
+{
+  "id": "newclient",
+  "business": {
+    "name": "City Ambulance Services",
+    "shortName": "City Ambulance",
+    "tagline": "FAST CARE. SAFE HANDS. SAVING LIVES.",
+    "heroEyebrow": "24/7 Emergency Ambulance Services",
+    "heroTitle": "24/7 Emergency Ambulance Service in Your City",
+    "heroCopy": "Reliable, round-the-clock emergency medical transportation with modern life support systems.",
+    "regionalNote": "24/7 Immediate Emergency Dispatch",
+    "operatingHours": "24 hours, 7 days",
+    "rating": "4.9",
+    "reviewCount": "50",
+    "reviewPlatform": "Google reviews"
+  },
+  "contact": {
+    "primaryPhone": "+91 90000 00000",
+    "primaryPhoneRaw": "+919000000000",
+    "secondaryPhone": "+91 91111 11111",
+    "secondaryPhoneRaw": "+919111111111",
+    "whatsappNumber": "+919000000000",
+    "whatsappPrefill": "I need an ambulance urgently. My location is: ",
+    "email": "info@exampleambulance.com",
+    "address": {
+      "street": "123 Hospital Road",
+      "locality": "Area Name",
+      "region": "City Name",
+      "state": "State Name",
+      "postalCode": "500001",
+      "country": "IN",
+      "full": "123 Hospital Road, Area Name, City Name, State Name 500001"
+    },
+    "geo": {
+      "latitude": 17.3850,
+      "longitude": 78.4867
+    },
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ambulance%20Services"
+  },
+  "branding": {
+    "logo": {
+      "src": "/assets/img/logo.webp",
+      "alt": "Ambulance Service Logo",
+      "width": 74,
+      "height": 54
+    },
+    "heroImage": "/assets/img/ambulance-exterior.webp",
+    "ogImage": "/assets/img/ambulance-exterior.jpg",
+    "themeColor": "#e3161c",
+    "colors": {
+      "brandPrimary": "#e3161c",
+      "brandPrimaryDark": "#b80d16",
+      "brandPrimarySoft": "#fff1f2",
+      "brandSecondary": "#073b82",
+      "brandSecondaryDark": "#05295c",
+      "ink": "#10284c",
+      "muted": "#39516f",
+      "line": "#e5e7eb",
+      "panel": "#f8fafc",
+      "white": "#ffffff"
+    }
+  },
+  "services": [
+    {
+      "id": "icu",
+      "title": "ICU Ambulance",
+      "description": "Critical care equipped with ventilator, monitor, and emergency medic.",
+      "image": "/assets/img/ambulance-interior.webp",
+      "imageAlt": "ICU ambulance interior"
+    },
+    {
+      "id": "transfer",
+      "title": "Patient Transfer",
+      "description": "Safe bed-to-bed transfers between hospitals and homes.",
+      "image": "/assets/img/patient-transfer.webp",
+      "imageAlt": "Safe patient transfer"
+    },
+    {
+      "id": "emergency",
+      "title": "Emergency Response",
+      "description": "Rapid ambulance response ready 24/7 anytime, anywhere.",
+      "image": "/assets/img/ambulance-fleet.webp",
+      "imageAlt": "Ambulance emergency response"
+    }
+  ],
+  "ambulanceTypes": [
+    {
+      "name": "Advanced Life Support (ALS)",
+      "features": ["Transport ventilator", "Cardiac monitor", "Oxygen supply", "Paramedic"]
+    },
+    {
+      "name": "Basic Life Support (BLS)",
+      "features": ["Stretcher", "Oxygen cylinder", "First aid equipment", "Trained EMT driver"]
+    },
+    {
+      "name": "Mortuary Freezer Box",
+      "features": ["Temperature controlled", "Dignified transport", "Long distance"]
+    }
+  ],
+  "serviceAreas": [
+    "Downtown",
+    "North Suburbs",
+    "South District",
+    "East Metro",
+    "West Corridor"
+  ],
+  "gallery": [
+    {
+      "src": "/assets/img/ambulance-team.webp",
+      "alt": "Emergency response team"
+    },
+    {
+      "src": "/assets/img/paramedic-care.webp",
+      "alt": "Paramedic care"
+    },
+    {
+      "src": "/assets/img/ambulance-exterior.webp",
+      "alt": "Ambulance exterior"
+    }
+  ],
+  "socialMedia": {
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "youtube": "",
+    "justdial": ""
+  },
+  "seo": {
+    "domain": "https://exampleambulance.com",
+    "home": {
+      "title": "24/7 Emergency Ambulance Service in Your City",
+      "description": "24/7 emergency ambulance service. Fast ICU, oxygen & patient transport. Call for immediate response."
+    },
+    "about": {
+      "title": "About Us | Emergency Ambulance Services",
+      "description": "Learn about our dedicated emergency medical transport team and fleet."
+    },
+    "services": {
+      "title": "Ambulance Services | 24/7 Emergency Care",
+      "description": "Comprehensive ambulance services including ICU, oxygen, and inter-city transfers."
+    },
+    "contact": {
+      "title": "Contact 24/7 Ambulance Service",
+      "description": "Contact us for immediate emergency dispatch and patient transport."
+    },
+    "googleSiteVerification": []
+  },
+  "integrations": {
+    "web3formsKey": "YOUR_WEB3FORMS_KEY",
+    "googleAdsId": "",
+    "googleAdsLabel": "",
+    "ga4Id": ""
+  }
+}

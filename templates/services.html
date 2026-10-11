@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+{{PARTIAL_HEAD}}
+  </head>
+  <body>
+{{PARTIAL_HEADER}}
+
+    <main>
+      <section class="page-hero small-hero">
+        <div class="container" data-reveal>
+          <div class="kicker">Services</div>
+          <h1>{{SERVICES_PAGE_H1}}</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <div class="kicker">Emergency care</div>
+            <h2>Fast ambulance response with trained paramedics</h2>
+          </div>
+          <div class="service-grid">
+{{SERVICES_GRID_CARDS}}
+          </div>
+        </div>
+      </section>
+
+      <section class="section areas">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <div class="kicker">Our reach</div>
+            <h2>Serving {{REGION}} and nearby areas</h2>
+          </div>
+          <ul class="area-list" data-reveal>
+{{SERVICE_AREAS_ITEMS}}
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-box" data-reveal>
+          <div class="kicker">Call now</div>
+          <h2>Emergency? We’re ready 24/7 to get you the care you need, fast and safe.</h2>
+          <div class="hero-actions">
+            <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="header">Call Now</a>
+            <a class="cta-white" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" data-cta="header" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+{{PARTIAL_FOOTER}}
+{{PARTIAL_MOBILE_CALLBAR}}
+
+    <script src="/assets/js/client-config.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

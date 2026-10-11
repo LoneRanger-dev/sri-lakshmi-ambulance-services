@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+{{PARTIAL_HEAD}}
+  </head>
+  <body>
+{{PARTIAL_HEADER}}
+
+    <main>
+      <section class="page-hero small-hero">
+        <div class="container" data-reveal>
+          <div class="kicker">About</div>
+          <h1>Trusted care close to home</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container about-grid">
+          <div class="card" data-reveal>
+            <h2>Our story</h2>
+            <p>At {{BUSINESS_NAME}}, we’re dedicated to swift, compassionate care, ensuring every patient in {{REGION}} and nearby areas receives safe and timely medical transport.</p>
+            <p>Our approach is simple: respond quickly, remain calm under pressure, and carry every patient with respect and professionalism.</p>
+          </div>
+          <div class="card" data-reveal style="--reveal-delay:.1s">
+            <h3>Mission</h3>
+            <p>Fast care</p>
+            <h3>Values</h3>
+            <p>Compassion first</p>
+            <h3>Reach</h3>
+            <p>Serving {{REGION}} and nearby areas with emergency response support across the community.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <div class="kicker">Gallery</div>
+            <h2>Snapshots of support and service</h2>
+          </div>
+          <div class="service-grid">
+{{GALLERY_GRID_CARDS}}
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-box" data-reveal>
+          <div class="kicker">Need help?</div>
+          <h2>Call {{BUSINESS_NAME}} now for immediate support.</h2>
+          <div class="hero-actions">
+            <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="header">Call</a>
+            <a class="cta-white" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" data-cta="header" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+{{PARTIAL_FOOTER}}
+{{PARTIAL_MOBILE_CALLBAR}}
+
+    <script src="/assets/js/client-config.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

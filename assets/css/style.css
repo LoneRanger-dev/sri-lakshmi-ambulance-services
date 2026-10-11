@@ -99,7 +99,7 @@ h1,h2,h3,h4 { margin: 0 0 1rem; line-height: 1.2; }
 }
 .hero {
   position: relative;
-  background: linear-gradient(90deg, rgba(5,41,92,0.92) 0%, rgba(5,41,92,0.68) 42%, rgba(5,41,92,0.18) 75%), url('/assets/img/ambulance-exterior.webp') center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(5,41,92,0.92) 0%, rgba(5,41,92,0.68) 42%, rgba(5,41,92,0.18) 75%), var(--hero-bg-image, url('/assets/img/ambulance-exterior.webp')) center/cover no-repeat;
   color: var(--white);
   padding: 4rem 0 3rem;
 }

@@ -1,0 +1,158 @@
+{
+  "id": "srilakshmiambulance",
+  "business": {
+    "name": "Sri Lakshmi Ambulance Services",
+    "shortName": "Sri Lakshmi Ambulance",
+    "tagline": "24/7 DEDICATED EMERGENCY AMBULANCE CARE & TRANSPORT",
+    "heroEyebrow": "24/7 Emergency Ambulance Service",
+    "heroTitle": "24/7 Emergency Ambulance Service & Patient Transport",
+    "heroCopy": "FAST CARE. SAFE HANDS. SAVING LIVES. Prompt emergency ambulance service with ICU ventilator, oxygen support, and inter-city patient transfers.",
+    "regionalNote": "24 గంటలూ అత్యవసర అంబులెన్స్ సేవలు అందుబాటులో ఉన్నాయి",
+    "operatingHours": "24 hours, 7 days",
+    "rating": "4.9",
+    "reviewCount": "58",
+    "reviewPlatform": "Google reviews"
+  },
+  "contact": {
+    "primaryPhone": "+91 98480 12345",
+    "primaryPhoneRaw": "+919848012345",
+    "secondaryPhone": "+91 98480 67890",
+    "secondaryPhoneRaw": "+919848067890",
+    "whatsappNumber": "+919848012345",
+    "whatsappPrefill": "I need an ambulance urgently for Sri Lakshmi Ambulance Services. My location is: ",
+    "email": "contact@srilakshmiambulance.com",
+    "address": {
+      "street": "Main Road, Near Government Hospital",
+      "locality": "Visakhapatnam",
+      "region": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "postalCode": "530002",
+      "country": "IN",
+      "full": "Main Road, Near Government Hospital, Visakhapatnam, Andhra Pradesh 530002"
+    },
+    "geo": {
+      "latitude": 17.7041,
+      "longitude": 83.2977
+    },
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sri%20Lakshmi%20Ambulance%20Services%2C%20Visakhapatnam"
+  },
+  "branding": {
+    "logo": {
+      "src": "/assets/img/logo.webp",
+      "alt": "Sri Lakshmi Ambulance Services logo",
+      "width": 74,
+      "height": 54
+    },
+    "heroImage": "/assets/img/ambulance-exterior.webp",
+    "ogImage": "https://srilakshmiambulance.com/assets/img/ambulance-exterior.jpg",
+    "themeColor": "#087f3e",
+    "colors": {
+      "brandPrimary": "#087f3e",
+      "brandPrimaryDark": "#055a2b",
+      "brandPrimarySoft": "#ecfdf5",
+      "brandSecondary": "#073b82",
+      "brandSecondaryDark": "#05295c",
+      "ink": "#0f2316",
+      "muted": "#33513f",
+      "line": "#d1fae5",
+      "panel": "#f0fdf4",
+      "white": "#ffffff"
+    }
+  },
+  "services": [
+    {
+      "id": "icu",
+      "title": "ICU Ventilator Ambulance",
+      "description": "Equipped with transport ventilators, multi-channel monitors, and certified emergency paramedics.",
+      "image": "/assets/img/ambulance-interior.webp",
+      "imageAlt": "Interior of ICU equipped ambulance"
+    },
+    {
+      "id": "transfer",
+      "title": "Inter-City Patient Transfer",
+      "description": "Safe bed-to-bed long-distance patient transfer with continuous oxygenation and nurse support.",
+      "image": "/assets/img/patient-transfer.webp",
+      "imageAlt": "Staff transferring patient safely"
+    },
+    {
+      "id": "emergency",
+      "title": "24/7 Rapid Emergency Response",
+      "description": "Immediate dispatch across the city and surrounding highways with GPS tracking.",
+      "image": "/assets/img/ambulance-fleet.webp",
+      "imageAlt": "Sri Lakshmi ambulance emergency fleet"
+    }
+  ],
+  "ambulanceTypes": [
+    {
+      "name": "Advanced Life Support (ALS / ICU)",
+      "features": ["Transport ventilator", "Bipap / CPAP support", "Cardiac monitor & defibrillator", "Infusion pump", "Doctor / Paramedic on board"]
+    },
+    {
+      "name": "Basic Life Support (BLS)",
+      "features": ["Continuous oxygen delivery", "Spine board & scoop stretcher", "Basic emergency medications", "Trained EMT driver"]
+    },
+    {
+      "name": "Freezer Box & Mortuary Van",
+      "features": ["Stainless steel freezing unit", "Dignified and hygienic repatriation", "Inter-state permit assistance"]
+    }
+  ],
+  "serviceAreas": [
+    "Visakhapatnam City",
+    "MVP Colony",
+    "Gajuwaka",
+    "NAD Junction",
+    "Madhurawada",
+    "Pendurthi",
+    "Anakapalli",
+    "Steel Plant",
+    "Kurmannapalem",
+    "Kancharapalem"
+  ],
+  "gallery": [
+    {
+      "src": "/assets/img/ambulance-team.webp",
+      "alt": "Sri Lakshmi Ambulance Services paramedic team"
+    },
+    {
+      "src": "/assets/img/paramedic-care.webp",
+      "alt": "Dedicated emergency paramedic care"
+    },
+    {
+      "src": "/assets/img/ambulance-exterior.webp",
+      "alt": "Sri Lakshmi ambulance exterior"
+    }
+  ],
+  "socialMedia": {
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "youtube": "",
+    "justdial": ""
+  },
+  "seo": {
+    "domain": "https://srilakshmiambulance.com",
+    "home": {
+      "title": "Sri Lakshmi Ambulance Services | 24/7 Emergency Ambulance",
+      "description": "24/7 emergency ambulance service in Visakhapatnam. Fast ICU, oxygen & patient transport. Call +91 98480 12345 for immediate response."
+    },
+    "about": {
+      "title": "About Us | Sri Lakshmi Ambulance Services",
+      "description": "Learn about Sri Lakshmi Ambulance Services in Visakhapatnam. Offering 24/7 emergency care, ICU transport, and dedicated medical support."
+    },
+    "services": {
+      "title": "Ambulance Services | Sri Lakshmi Ambulance Services",
+      "description": "24/7 emergency ambulance, ICU transport, oxygen support, and patient transfer services by Sri Lakshmi Ambulance Services. Call +91 98480 12345."
+    },
+    "contact": {
+      "title": "Contact 24/7 Ambulance | Sri Lakshmi Ambulance Services",
+      "description": "Contact Sri Lakshmi Ambulance Services in Visakhapatnam. Available 24/7 for urgent ambulance dispatch and patient transfer. Call +91 98480 12345."
+    },
+    "googleSiteVerification": []
+  },
+  "integrations": {
+    "web3formsKey": "YOUR_WEB3FORMS_KEY",
+    "googleAdsId": "",
+    "googleAdsLabel": "",
+    "ga4Id": ""
+  }
+}

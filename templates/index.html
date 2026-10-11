@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+{{PARTIAL_HEAD}}
+  </head>
+  <body>
+{{PARTIAL_HEADER}}
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div data-reveal>
+            <span class="eyebrow">{{HERO_EYEBROW}}</span>
+            <h1>{{HERO_TITLE}}</h1>
+            <p class="hero-copy">{{HERO_COPY}}</p>
+            <p class="hero-note">{{REGIONAL_NOTE}}</p>
+            <div class="hero-actions">
+              <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="hero">Call Now</a>
+              <a class="cta-secondary" href="/about" data-cta="hero">About Our Service</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-label="Service highlights" data-reveal style="--reveal-delay:.15s">
+            <div class="mini-stat">
+              <div><strong data-counter="{{RATING}}" data-suffix="★">0★</strong><span>{{REVIEW_COUNT}} {{REVIEW_PLATFORM}}</span></div>
+              <div><strong data-counter="24" data-suffix="×7">0×7</strong><span>Always available</span></div>
+              <div><strong>Fast</strong><span>Emergency response</span></div>
+              <div><strong>Local</strong><span>{{LOCALITY}} based</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="trust-strip">
+        <div class="container trust-inner" data-reveal>
+          <span><span data-counter="{{RATING}}" data-suffix="★">0★</span></span>
+          <span>·</span>
+          <span><span data-counter="{{REVIEW_COUNT}}" data-suffix="">0</span> {{REVIEW_PLATFORM}}</span>
+          <span>·</span>
+          <span><span data-counter="24" data-suffix="×7">0×7</span></span>
+          <span>·</span>
+          <span>Based in {{LOCALITY}}</span>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <div class="kicker">About</div>
+            <h2>Compassionate care, prompt response</h2>
+          </div>
+          <div class="about-grid">
+            <div class="card" data-reveal>
+              <p>At {{BUSINESS_NAME}}, we’re dedicated to swift, compassionate care, ensuring every patient in {{REGION}} and nearby areas receives safe and timely medical transport.</p>
+              <ul class="feature-list">
+                <li>Emergency and non-emergency ambulance support</li>
+                <li>Experienced staff with a patient-first approach</li>
+                <li>Quick response across local and nearby regions</li>
+              </ul>
+            </div>
+            <div class="card" data-reveal style="--reveal-delay:.1s">
+              <h3>Mission</h3>
+              <p>Fast care</p>
+              <h3>Values</h3>
+              <p>Compassion first</p>
+              <h3>Response</h3>
+              <p>We arrive quickly to provide urgent medical care when every second counts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <div class="kicker">Services</div>
+            <h2>Emergency care you can count on</h2>
+          </div>
+          <div class="service-grid">
+{{SERVICES_GRID_CARDS}}
+          </div>
+        </div>
+      </section>
+
+      <section class="section areas">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <div class="kicker">Coverage</div>
+            <h2>Areas served</h2>
+          </div>
+          <ul class="area-list" data-reveal>
+{{SERVICE_AREAS_ITEMS}}
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="card contact-box" data-reveal>
+            <div class="kicker">Need help now?</div>
+            <h2>Call {{BUSINESS_NAME}}</h2>
+            <p>Emergency? We’re ready to respond instantly, anytime you need us.</p>
+            <div class="hero-actions">
+              <a class="cta-primary" href="tel:{{PRIMARY_PHONE_RAW}}" data-cta="hero">Call Now</a>
+              <a class="cta-white" href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{WHATSAPP_PREFILL_ENCODED}}" data-cta="hero" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+          <div class="card" data-reveal style="--reveal-delay:.1s">
+            <div class="kicker">Location</div>
+            <h3>{{STREET_ADDRESS}}</h3>
+            <p>{{LOCALITY}}, {{REGION}}, {{STATE}} {{POSTAL_CODE}}</p>
+            <p><strong>Hours:</strong> {{OPERATING_HOURS}}</p>
+            <p><strong>Email:</strong> <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+            <p><strong>Primary:</strong> <a href="tel:{{PRIMARY_PHONE_RAW}}">{{PRIMARY_PHONE}}</a></p>
+{{SECONDARY_PHONE_LINE}}
+          </div>
+        </div>
+      </section>
+    </main>
+
+{{PARTIAL_FOOTER}}
+{{PARTIAL_MOBILE_CALLBAR}}
+
+    <script src="/assets/js/client-config.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
